@@ -1,0 +1,278 @@
+@import "common.scss";
+@import "public.scss";
+@import "header.scss";
+.header .headerbox {
+    height:42px;
+}
+.header .header-bottom{
+    width:100%;
+    height:116px;
+    background:white;
+    .bottom-box{
+         width:1163px;
+         height:90px;
+         padding:26px 38px 0 42px;
+         margin:0 auto;
+         .left{
+            margin-top:5px;
+            width:150px;
+            height:55px;
+            float:left;
+            margin-right:90px;
+            background:url(../Index-img/8.png) no-repeat;
+        }
+    }
+}
+.footer{
+    background:white;
+    .footerbox{
+        .naved{
+            a{
+                color:#333333;
+            }
+        }
+    }
+}
+.regist-login{
+    width:100%;
+    height:526px;
+     padding-top:20px;
+     border-top:1px solid #d3d3d3;
+    .regist-login-box{
+        width:998px;
+        margin:0 auto;
+        position:relative;
+        .login{
+            .title{
+                height:38px;
+                ul{
+                    z-index:1;
+                    height:38px;
+                    overflow:hidden;
+                    li{
+                        z-index:2;
+                        position:absolute;
+                        background:white;
+                        float:left;
+                        width:240px;
+                        height:36px;
+                        border:1px solid #d3d3d3;
+                        border-bottom-color:white;
+                        font-size:12px;
+                        text-align:center;
+                        line-height:36px;
+                        a{
+                            color:#979797; 
+                        }
+                        i{
+                            color:#cccccc;
+                        }
+                    }
+                    li:last-child{
+                        left:430px;
+                        top:-1px;
+                        border-top:3px solid #ff5c00;
+                        a{
+                            color:#ff5c00;
+                        }
+                         i{
+                            color:#ff5c00;
+                        }
+                    }
+                    li:first-child{
+                        left:180px;
+                        top:0;
+                        background:#f8f8f8;
+                    }
+                } 
+            }
+            .login-content{
+                width:998px;
+                height:430px;
+                background:white;
+                border:1px solid #d3d3d3;
+                .login-content-left{
+                    float:left;
+                    margin-top:40px;
+                    width:458px;
+                    a{
+                        display:block;
+                        margin:0 auto;
+                        width:340px;
+                        height:340px;
+                        img{
+                             width:340px;
+                            height:300px;
+                        }
+                    }
+                }
+                .login-content-right{
+                    width:365px;
+                    float:left;
+                    padding-top:50px;
+                    padding-left:85px;
+                    ul{
+                        li{
+                            margin-bottom:28px;
+                            position:relative;
+                            label{
+                                float:left;
+                                width:72px;
+                                height:35px;
+                                line-height:35px;
+                                text-align:right;
+                                color:#666666;
+                                font-size:12px;
+                                margin-right:5px;
+                                
+                            }
+                             .message{
+                                display:none;
+                                position:absolute;
+                                left:77px;
+                                top:37px;
+                                padding:0 5px;
+                                height:20px;
+                                line-height:20px;
+                                background:#ffedb5;
+                                border:1px solid #ff9900;
+                                border-radius:2px;
+                                img{
+                                    float:left;
+                                    margin: 2px 3px 0 0;
+                                }
+                                span{
+                                    color:#ff0000;
+                                    font-size:12px;
+                                }
+                                .span{
+                                    color:#0e931c;
+                                }
+                            }
+                            .mess{
+                                background:white;
+                                border:0; 
+                            }
+                            input{
+                                outline:none;
+                            }
+                            i{
+                                float:right;
+                                color:#cccccc;
+                                position:absolute;
+                                left:325px;
+                                top:10px;
+                            }
+                            ::-webkit-input-placeholder{
+                                color:#a9a9a9;
+                            }
+                            .ipt{
+                                padding-left:5px;
+                                width:265px;
+                                height:33px;
+                                border:1px solid #c1c1c1;
+                                outline:none;
+                            }
+                            .anniu{
+                                 padding-left:45px;
+                                float:left;
+                                width:228px;
+                                height:42px;
+                                color:#666;
+                                font-size:12px;
+                                line-height:42px;
+                                background:#fcfcfc url(../detail-img/6.png) no-repeat -330px 6px;
+                                border:1px solid #cccccc;
+                            }
+                            #txt{
+                                width:124px;
+                                height:33px;
+                                border:1px solid #c1c1c1;
+                                margin-right:10px;
+                            }
+                           #btn{
+                                width:109px;
+                                height:28px;
+                                background:url(../detail-img/5.png);
+                                color:#ff7800;
+                                line-height:28px;
+                                text-align:center;
+                                border:1px solid #ffda71;
+                                border-radius:4px;
+                            }
+                            .sp{
+                                color:#666;
+                                font-size:12px;
+                                height:12px;
+                                line-height:12px;
+                                vertical-align:middle;
+                                span{
+                                    color:#20bfff;
+                                    padding-left:7px;
+                                }
+                            }
+                            .sub{
+                                width:227px;
+                                height:38px;
+                                display:block;
+                                background:#ff5c00;
+                                color:white;
+                                line-height:38px;
+                                text-align:center;
+                                margin:0 auto;
+                            }
+                        } 
+                        .test{
+                            overflow:hidden;
+                            margin-left:77px;
+                        }
+                        .check{
+                            height:36px;
+                            line-height:36px;
+                            width:232px;
+                            margin:0 auto;
+                            #check{
+                                margin:2px 9px 0 5px;
+                                vertical-align:middle;
+                            }
+                        }
+                        .subm{
+                            margin-bottom:20px;
+                        }
+                    }
+                    .other{
+                         width:227px;
+                         margin:0 auto;
+                        height:28px;
+                        color:#4d4d4d;
+                        font-size:12px;
+                        line-height:28px;
+                    }
+                    .account{
+                        width:227px;
+                        margin:0 auto;
+                        li{
+                            float:left;
+                            a{
+                                margin-right:10px;
+                                display:block;
+                                width:24px;
+                                height:24px;
+                            }
+                            .one{
+                                background:url(../detail-img/7.png) no-repeat -1px -301px;
+                            }
+                             .two{
+                                background:url(../detail-img/7.png) no-repeat -28px -301px;
+                            }
+                             .three{
+                                background:url(../detail-img/7.png) no-repeat -84px -301px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
