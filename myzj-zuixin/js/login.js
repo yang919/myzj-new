@@ -1,4 +1,4 @@
-
+var userflag,pwdflag;
 	//登陆页验证手机号
 $(".login-content-right ul li #uname").focus(function(){
 		$(this).css({"border":"1px solid #ff9900"});
@@ -64,8 +64,12 @@ function checkPwd(str){
 		}
 	}
 }
-$("#soon").click(function(){
+
+
+$("form").submit(function(){
 	if(userflag && pwdflag){
-		location.href="index.html";
+		return true;
 	}
+	return false;
+	
 })

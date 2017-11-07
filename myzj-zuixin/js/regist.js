@@ -1,3 +1,6 @@
+var userflag,pwdflag,upwdflag;
+
+
 //注册页验证手机号
 	$(".regist-content-left ul li #uname").focus(function(){
 		$(this).css({"border":"1px solid #ff9900"});
@@ -140,8 +143,10 @@ function qpwd(str1,str2){
 }
 
 var arr=[];
-$("#mm").click(function(){
-	if(userflag && pwdflag && upwdflag && upwdflag!= 1){
+
+
+$("form").submit(function(){
+	if(userflag && pwdflag && upwdflag && upwdflag!= 1 && $("#check").prop("checked")){
 		var _json ={
 			"ptel":$("#uname").val(),
 			"pwd":$("#upwd").val() 
@@ -151,8 +156,7 @@ $("#mm").click(function(){
 		$("#uname").val("");
 		$("#upwd").val("");
 		$("#qpwd").val("");
-		location.href="login.html";
+		return true;
 	}
-	
+	return false;
 })
-	
