@@ -66,6 +66,6 @@ function checkPwd(str){
 }
 $("#soon").click(function(){
 	if(userflag && pwdflag){
-		location.href="http://127.0.0.1:8020/myzj/html/index.html";
+		location.href="index.html";
 	}
 })

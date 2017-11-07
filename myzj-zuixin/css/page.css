@@ -177,7 +177,7 @@ img {
   right: 0;
   top: 0;
   z-index: 50;
-  cursor: pointer; }
+  box-shadow: -3px -3px 5px #f3f1f3; }
   .aside .asidebox {
     width: 36px;
     height: 688px;
@@ -185,55 +185,78 @@ img {
     top: 0;
     bottom: 0;
     margin: auto; }
-  .aside div {
-    width: 22px;
-    margin: 0 auto; }
-    .aside div p {
-      font-size: 12px;
-      color: #666666;
-      width: 22px;
-      line-height: 18px;
-      text-align: center;
-      padding-top: 10px; }
   .aside .person {
-    margin-bottom: 40px;
-    padding-top: 6px;
-    padding-left: 4px;
-    width: 32px;
-    height: 30px; }
+    position: relative; }
+    .aside .person .yonghu {
+      margin-bottom: 40px;
+      padding-top: 6px;
+      width: 32px;
+      padding-left: 2px;
+      height: 30px;
+      display: block;
+      color: #535362;
+      cursor: pointer; }
   .aside .shopCar {
     width: 29px;
     height: 124px;
+    position: relative;
     padding-left: 7px;
     padding-top: 14px;
     border-top: 1px solid #eae5e1;
     border-bottom: 1px solid #eae5e1; }
-    .aside .shopCar span {
-      color: #ff5c00; }
+    .aside .shopCar .gouwuche {
+      color: #535362;
+      cursor: pointer; }
+      .aside .shopCar .gouwuche #p {
+        display: inline-block;
+        font-size: 12px;
+        color: #666666;
+        width: 22px;
+        line-height: 18px;
+        text-align: center;
+        padding-top: 10px; }
+      .aside .shopCar .gouwuche .number {
+        color: #ff5c00; }
   .aside .kefu {
     width: 36px;
     height: 86px;
     color: white;
     padding-top: 5px;
+    position: relative;
     background: #ff5c00; }
+    .aside .kefu .inline-kf {
+      color: white;
+      cursor: pointer; }
+      .aside .kefu .inline-kf #p {
+        display: inline-block;
+        padding-left: 4px;
+        line-height: 18px;
+        text-align: center;
+        padding-top: 10px;
+        width: 30px;
+        color: white;
+        font-size: 12px; }
     .aside .kefu .icon-kefu {
       padding-left: 10px; }
-    .aside .kefu p {
-      width: 26px;
-      color: white;
-      margin: 0 auto; }
   .aside .ewm {
     margin: 40px 0;
     padding-top: 6px;
     padding-left: 8px;
     width: 28px;
     height: 30px; }
+    .aside .ewm .erweima {
+      color: #535362;
+      cursor: pointer; }
   .aside .wjx {
+    position: relative;
     padding-top: 6px;
     padding-left: 8px;
     width: 28px;
     height: 30px;
     margin-bottom: 40px; }
+    .aside .wjx .wujiaoxing {
+      color: #535362;
+      cursor: pointer; }
   .aside .db {
     position: absolute;
     left: 0;
@@ -242,17 +265,21 @@ img {
     width: 29px;
     height: 31px;
     bottom: 30px; }
+    .aside .db .dingbu {
+      color: #535362;
+      cursor: pointer; }
   .aside .iconfont {
     font-size: 22px; }
   .aside .my {
+    padding-top: 10px;
     position: absolute;
     width: 288px;
-    height: 160px;
+    height: 150px;
     left: -320px;
     top: 0;
     background: white;
     display: none; }
-    .aside .my div {
+    .aside .my .div {
       position: absolute;
       right: -12px;
       top: 12px;
@@ -261,26 +288,29 @@ img {
       border: 6px solid transparent;
       border-left-color: white; }
     .aside .my i {
-      padding-top: 10px;
-      padding-left: 255px; }
+      padding-left: 255px;
+      color: #605f67; }
     .aside .my img {
       display: block;
       margin: 0 auto; }
     .aside .my .txt1 {
-      width: 215px;
-      margin: 0 auto;
+      width: 238px;
+      font-size: 12px;
+      margin: 15px auto 0;
       color: #525261; }
       .aside .my .txt1 a {
+        display: inline-block;
         color: #ff5c00; }
   .aside .my-two {
+    padding-top: 10px;
     position: absolute;
     width: 288px;
-    height: 160px;
+    height: 150px;
     left: -320px;
-    top: 332px;
+    top: 0;
     background: white;
     display: none; }
-    .aside .my-two div {
+    .aside .my-two .div {
       position: absolute;
       right: -12px;
       top: 12px;
@@ -289,14 +319,15 @@ img {
       border: 6px solid transparent;
       border-left-color: white; }
     .aside .my-two i {
-      padding-top: 10px;
-      padding-left: 255px; }
+      padding-left: 255px;
+      color: #605f67; }
     .aside .my-two img {
       display: block;
       margin: 0 auto; }
     .aside .my-two .txt1 {
-      width: 215px;
-      margin: 0 auto;
+      font-size: 12px;
+      width: 238px;
+      margin: 15px auto 0;
       color: #525261; }
       .aside .my-two .txt1 a {
         color: #ff5c00; }
@@ -305,14 +336,13 @@ img {
     height: 36px;
     position: absolute;
     left: -100px;
-    top: 408px;
-    color: #535362;
+    top: 0;
     font-size: 12px;
     line-height: 36px;
     background: white;
     padding-left: 27px;
     display: none; }
-    .aside .my-kefu div {
+    .aside .my-kefu .div {
       position: absolute;
       right: -12px;
       top: 12px;
@@ -320,19 +350,20 @@ img {
       height: 0;
       border: 6px solid transparent;
       border-left-color: white; }
+    .aside .my-kefu a {
+      color: #535362; }
   .aside .my-top {
     width: 66px;
     height: 36px;
     position: absolute;
     left: -100px;
-    bottom: 30px;
-    color: #535362;
+    top: 0;
     font-size: 12px;
     line-height: 36px;
     background: white;
     padding-left: 12px;
     display: none; }
-    .aside .my-top div {
+    .aside .my-top .div {
       position: absolute;
       right: -12px;
       top: 12px;
@@ -340,16 +371,18 @@ img {
       height: 0;
       border: 6px solid transparent;
       border-left-color: white; }
-  .aside .my-car {
+    .aside .my-top a {
+      color: #535362; }
+  .aside .my-cars {
     width: 264px;
-    height: 100%;
+    height: 500px;
     padding: 0 12px;
     background: white;
     display: none;
     position: absolute;
-    left: -320px;
-    top: 0; }
-    .aside .my-car div {
+    left: 0px;
+    top: 0px; }
+    .aside .my-cars .div {
       position: absolute;
       right: -12px;
       top: 12px;
@@ -357,28 +390,28 @@ img {
       height: 0;
       border: 6px solid transparent;
       border-left-color: white; }
-    .aside .my-car .shop {
+    .aside .my-cars .shop {
       width: 288px;
       height: 46px;
       line-height: 46px;
       border-bottom: 1px solid #eeeeee;
       text-align: left; }
-      .aside .my-car .shop span {
+      .aside .my-cars .shop span {
         color: #333333;
         font-size: 16px; }
-      .aside .my-car .shop i {
+      .aside .my-cars .shop i {
         padding-top: 5px;
         padding-left: 198px; }
-    .aside .my-car img {
+    .aside .my-cars img {
       display: block;
       margin: 30px auto 0; }
-    .aside .my-car .txt3 {
+    .aside .my-cars .txt3 {
       width: 124px;
       color: #444;
       font-size: 12px;
       line-height: 20px;
       margin: 15px auto; }
-    .aside .my-car .txt4 {
+    .aside .my-cars .txt4 {
       border-top: 1px solid #eeeeee;
       height: 46px;
       line-height: 46px;

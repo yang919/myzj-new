@@ -10,40 +10,50 @@
 	<body>
 		<div class="aside">
 			<div class="asidebox">
-				<div class="person"><i class="iconfont icon-yonghu"></i></div>
-				<div class="shopCar"><i class="iconfont icon-gouwuche"></i><p>购物车</p><span>(0)</span></div>
-				<div class="ewm"><i class="iconfont icon-erweima"></i></div>
-				<div class="wjx"><i class="iconfont icon-wujiaoxing-copy"></i></div>
-				<div class="kefu"><i class="iconfont icon-kefu"></i><p>在线客服</p></div>
-				<div class="db"><i class="iconfont icon-dingbu"></i></div>
-				<div class="my">
-					<div></div>
-					<i class="iconfont icon-chahao"></i>
-					<img src="../Index-img/139.jpg" />
-					<p class="txt1">您好，母婴之家用户，请&ensp;<a href="#">登录</a>&ensp;&ensp;|&ensp;&ensp;<a href="#">注册</a></p>
+				<div class="person">
+					<a href="#" class="yonghu"><i class="iconfont icon-yonghu"></a></i>
+					<div class="my">
+						<div class="div"></div>
+						<a href="#"><i class="iconfont icon-chahao"></i></a>
+						<img src="../Index-img/139.jpg" />
+						<p class="txt1">您好，母婴之家用户，请&ensp;<a href="login.html">登录</a>&ensp;&ensp;|&ensp;&ensp;<a href="regist.html">注册</a></p>
+					</div>
 				</div>
-				<div class="my-car">
-					<div></div>
-					<p class="shop"><span>购物车</span><i class="iconfont icon-chahao"></i></p>
-					<img src="../Index-img/140.jpg" />
-					<p class="txt3">您的购物车还是空的去挑选喜欢的商品吧~</p>
-					<p class="txt4">您可能会喜欢</p>
+				<div class="shopCar">
+					<a href="#" class="gouwuche"><i class="iconfont icon-gouwuche"></i><span id="p">购物车</span><span class="number">(0)</span></a>
+					<div class="my-cars">
+						<div class="div"></div>
+						<p class="shop"><span>购物车</span><i class="iconfont icon-chahao"></i></p>
+						<img src="../Index-img/140.jpg" />
+						<p class="txt3">您的购物车还是空的去挑选喜欢的商品吧~</p>
+						<p class="txt4">您可能会喜欢</p>
+					</div>
 				</div>
-				<div class="my-two">
-					<div></div>
-					<i class="iconfont icon-chahao"></i>
-					<img src="../Index-img/139.jpg" />
-					<p class="txt1">您好，母婴之家用户，请&ensp;<a href="#">登录</a>&ensp;&ensp;|&ensp;&ensp;<a href="#">注册</a></p>
+				<div class="ewm" ><a href="#" class="erweima"><i class="iconfont icon-erweima"></i></a></div>
+				<div class="wjx">
+					<a href="#" class="wujiaoxing"><i class="iconfont icon-wujiaoxing-copy"></i></a>
+					<div class="my-two">
+						<div class="div"></div>
+						<a href="#"><i class="iconfont icon-chahao"></i></a>
+						<img src="../Index-img/139.jpg" />
+						<p class="txt1">您好，母婴之家用户，请&ensp;<a href="login.html">登录</a>&ensp;|&ensp;<a href="regist.html">注册</a></p>
+					</div>
 				</div>
-				<div class="my-kefu"><div></div>客服</div>
-				<div class="my-top"><div></div>返回顶部</div>
+				<div class="kefu">
+					<a href="#" class="inline-kf"><i class="iconfont icon-kefu"></i><span id="p">在线客服</span></a>
+					<div class="my-kefu"><div class="div"></div><a href="#" class="kf">客服</a></div>
+				</div>
+				<div class="db">
+					<a href="#" class="dingbu"><i class="iconfont icon-dingbu"></i></a>
+					<div class="my-top"><div class="div"></div><a href="#" class="call-back">返回顶部</a></div>
+				</div>
 			</div>
 		</div>
 		<div class="header">
 			<div class="headerbox">
 				<div class="header-top">
 					<div class="left">
-						<a href="http://127.0.0.1:8020/01cookie/myzj-zuixin/html/index.html" class="my">母婴之家</a>
+						<a href="index.html" class="my">母婴之家</a>
 						<a href="http://haitao.muyingzhijia.com/">母婴海淘</a>
 						<div class="lastbox">
 							<a href="#" class="last">
@@ -54,8 +64,8 @@
 					</div>
 					<div class="right">
 						<p>欢迎来到母婴之家！</p>
-						<a href="http://127.0.0.1:8020/01cookie/myzj-zuixin/html/login.html" class="login">[登陆]</a>
-						<a href="http://127.0.0.1:8020/01cookie/myzj-zuixin/html/regist.html" class="free">[免费注册]</a>
+						<a href="login.html" class="login">[登陆]</a>
+						<a href="regist.html" class="free">[免费注册]</a>
 						<li class="one">
 							<a href="#" class="link">我的订单</a>
 							<ul>
@@ -813,7 +823,7 @@
 				</div>
 				</div>
 				<ul class="navs">
-					<li><a href="#" class="first">首页</a></li>
+					<li><a href="index.html" class="first">首页</a></li>
 					<li><a href="#">幸运星期一</a></li>
 					<li class="more">
 						<a href="#">直邮专区</a>
@@ -894,14 +904,14 @@
 								<div class="full">
 									<a href="#" ><span class="sp1">满减</span><span class="sp2"></span>贝亲满99减10/199减20</a>
 								</div>
-								<div class="frees">
+								<div class="frees" id="free-one">
 									<div class="title">
 										<a href="#"><span class="sp1">赠品</span><span class="sp2"></span>商城自营满199元送好礼</a>
 										<a href="#" class="slow">收起</a>
 										<a href="#" class="look">展开查看</a>
 									</div>
 									
-									<div class="free-pics">
+									<div class="free-pics" id="free-pics-one">
 										<div class="outbox out1">
 											<div class="free-one">
 												<div class="free-good">

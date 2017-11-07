@@ -620,6 +620,17 @@
                                }
                            }
                         }
+                        #free-one{
+                            .slow{
+                                display:none;
+                            }
+                            .look{
+                                display:block;
+                            }
+                            #free-pics-one{
+                                display:none;
+                            }
+                        }
                     }
                 }
                 .content3{
@@ -762,6 +773,7 @@
             .section-bottom-right{
                 float:right;
                 width:180px;
+                background:#fcfcfc;
                 .section-bottom-right-top{
                     width:165px;
                     margin:0 auto;

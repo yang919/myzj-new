@@ -122,12 +122,11 @@ function showDatas(json){
 			str +=`<li>
 						<dl>
 							<dt>
-								<a href="http://127.0.0.1:8020/01cookie/myzj-zuixin/html/detail.html"><img src="../page-img/${json[i].src}" title="${json[i].name}"></a>
+								<a href="detail.html"><img src="../page-img/${json[i].src}" title="${json[i].name}"></a>
 							</dt>
 							<dd>
 								<p class="goods-name">
-									<a href="http://127.0.0.1:8020/01cookie/myzj-zuixin/html/detail.html" title="${json[i].name}">${json[i].name}<span>${json[i].span}</span></a>
-									
+									<a href="detail.html" title="${json[i].name}">${json[i].name}<span>${json[i].span}</span></a>
 								</p>
 								<p class="goods-price">
 									<span>${json[i].price}</span>

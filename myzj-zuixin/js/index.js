@@ -1,5 +1,4 @@
 
-window.onload = function(){
 	var timer = setInterval(autoPlay,2000);
 	var $olist = $(".bt li");
 	var $ulist = $(".nv");
@@ -37,7 +36,7 @@ window.onload = function(){
 				html1 += `<div class="content">
 								<div class="left"><img src="../Index-img/${item.src}"/></div>
 								<div class="right">
-									<a href="http://127.0.0.1:8020/01cookie/myzj-zuixin/html/page.html" class="a" title="${item.link}">${item.link}</a>
+									<a href="page.html" class="a" title="${item.link}">${item.link}</a>
 									<p class="txt1">${item.txt}</p>
 									<p class="txt2">￥<span>${item.price}</span>起<a href="#"><span>点击进入</span></a></p>
 								</div>
@@ -49,7 +48,7 @@ window.onload = function(){
 								<div class="left"><img src="../Index-img/${item.src}"/></div>
 								<div class="right">
 									<a href="#" class="free">赠品</a>
-									<a href="http://127.0.0.1:8020/01cookie/myzj-zuixin/html/page.html" class="a" title="${item.link}">${item.link}</a>
+									<a href="page.html" class="a" title="${item.link}">${item.link}</a>
 									<p class="txt1">${item.txt}</p>
 									<P class="txt3">母婴之家发货</P>
 									<p class="txt2">￥<span>${item.price}</span>起<a href="#"><span>点击进入</span></a></p>
@@ -67,4 +66,3 @@ window.onload = function(){
 			$(".detail-two .top").html(str2);
 		}
 	})
-}

@@ -151,7 +151,7 @@ $("#mm").click(function(){
 		$("#uname").val("");
 		$("#upwd").val("");
 		$("#qpwd").val("");
-		location.href="http://127.0.0.1:8020/01cookie/myzj-zuixin/html/login.html";
+		location.href="login.html";
 	}
 	
 })

@@ -55,11 +55,13 @@ $(".title").click(function(){
 	if($(this).find(".look").css("display")=="none"){
 		$(this).find(".look").css({"display":"block"});
 		$(this).find(".slow").css({"display":"none"});
+		$(this).parent().find(".free-pics").hide();
 	}else{
 		$(this).find(".slow").css({"display":"block"});
 		$(this).find(".look").css({"display":"none"});
+		$(this).parent().find(".free-pics").show();
 	}
-	$(this).parent().find(".free-pics").toggle()
+	
 })
 
 //按钮控制图片的版块切换
